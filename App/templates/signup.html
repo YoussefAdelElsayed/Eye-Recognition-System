@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Full Name">
+  </div>
+    
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="number" class="form-control" id="id" placeholder="Student ID">
+  </div>
+    
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="file">Upload your eye picture</label>
+    <input type="file" class="form-control-file" id="file">
+  </div>
+    
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="agree">
+    <label class="form-check-label" for="agree">Verify these are my honest information</label>
+  </div>
+    
+    
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
