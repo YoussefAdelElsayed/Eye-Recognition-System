@@ -11,4 +11,11 @@
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
+
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+            <br>
+            <div class="text-center">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
 {% endblock %}

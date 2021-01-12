@@ -5,26 +5,46 @@
 {% endblock %}
 
 {% block body %}
-<form>
+<form action='/signup' method="post" enctype='multipart/form-data'>
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Full Name">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
   </div>
-    
+  
   <div class="form-group">
     <label for="id">ID</label>
-    <input type="number" class="form-control" id="id" placeholder="Student ID">
+    <input type="number" class="form-control" id="id" name="id" placeholder="Student ID">
   </div>
     
   <div class="form-group">
     <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   
   <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+  </div>
+    
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <input type="text" class="form-control" id="gender" name="gender" placeholder="Gender">
+  </div>
+    
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+  </div>
+    
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" class="form-control" id="age" name="age" placeholder="Age">
+  </div>
+    
+  <div class="form-group">
     <label for="file">Upload your eye picture</label>
-    <input type="file" class="form-control-file" id="file">
+    <input type="file" class="form-control-file" id="file" name="file">
   </div>
     
   <div class="form-group form-check">
